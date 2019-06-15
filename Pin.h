@@ -14,7 +14,7 @@ public:
             pin = _pin; 
             mode = _mode;
             pinMode(_pin, mode); 
-            ready = true); 
+            ready = true; 
             }
     }
     void reset() { ready = false; }
