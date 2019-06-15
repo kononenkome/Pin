@@ -18,7 +18,7 @@ public:
             }
     }
     void reset() { ready = false; }
-    void set(int level) { digitalWrite(pin, level); }
+    void set(int level) { setup(pin, mode); digitalWrite(pin, level); }
     int get() { return digitalRead(pin); }
     void on() { set(HIGH); }
     void off() { set(LOW); }
