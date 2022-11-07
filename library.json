@@ -1,0 +1,23 @@
+{
+  "name": "Pin",
+  "version": "1.0",
+  "keywords": "wifi,wi-fi,esp,esp8266,esp32,espressif8266,espressif32,nodemcu,wemos,arduino",
+  "description": "Pin class for GPIO",
+  "authors":
+  {
+        "name": "kononenkome",
+        "url": "https://github.com/kononenkome"
+  },
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/kononenkome/Pin.git"
+  },
+  "frameworks": "arduino",
+  "platforms": 
+  [
+    "espressif8266",
+    "espressif32",
+    "arduino"
+  ]
+}
