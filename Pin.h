@@ -23,7 +23,7 @@ public:
     int get() { return digitalRead(pin); }
     void on(int ms = 0) { 
         set(HIGH); 
-        if (time) delay(ms);
+        if (ms) delay(ms);
         off();
         }
     void off() { set(LOW); }
