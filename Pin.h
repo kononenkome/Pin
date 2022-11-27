@@ -21,11 +21,7 @@ public:
     void reset() { ready = false; }
     void set(int level) { setup(pin, mode); digitalWrite(pin, level); }
     int get() { return digitalRead(pin); }
-    void on(int ms = 0) { 
-        set(HIGH); 
-        if (ms) delay(ms);
-        off();
-        }
+    void on(int ms = 0) { set(HIGH); if (ms) delay(ms); off(); }
     void off() { set(LOW); }
     void toggle() { set(!get()); }
 };
