@@ -17,6 +17,7 @@ public:
             ready = true; 
             }
     }
+    void operator = (int _pin) { setup(_pin); }
     void reset() { ready = false; }
     void set(int level) { setup(pin, mode); digitalWrite(pin, level); }
     int get() { return digitalRead(pin); }
