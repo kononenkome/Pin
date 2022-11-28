@@ -15,7 +15,7 @@ public:
             mode = _mode;
             pinMode(_pin, mode); 
             ready = true; 
-            }
+        }
     }
     void operator = (int _pin) { setup(_pin); }
     void reset() { ready = false; }
